@@ -1,9 +1,16 @@
+import attention from "../assets/images/attention.png";
 import mani_02 from "../assets/images/mani-02.png";
 import mani_03 from "../assets/images/mani-03.png";
 import manifesto from "../assets/images/manifesto.png";
+import ourvision from "../assets/images/our vision.png";
 import prologue from "../assets/images/prologue.png";
 import prologue2 from "../assets/images/prologue_2.png";
-import { manifestoText1, manifestoText2, manifestoText3 } from "../constants";
+import {
+  attentionText,
+  manifestoText1,
+  manifestoText2,
+  manifestoText3,
+} from "../constants";
 export const ManifestoPage = () => {
   const maniTextClass = "text-white text-2xl my-8";
   return (
@@ -31,6 +38,18 @@ export const ManifestoPage = () => {
       <div className="flex flex-row-reverse -mt-64">
         <img className="w-2/3" src={prologue2} alt="" />
       </div>
+      <img className="m-auto mb-16" src={attention} alt="attention" />
+      <div>
+        <p
+          className={`${maniTextClass} text-center w-2/3 m-auto uppercase font-bold`}
+        >
+          We're gonna make an anime game.
+        </p>
+        <p className={`${maniTextClass} text-center w-2/3 m-auto`}>
+          {attentionText}
+        </p>
+      </div>
+      <img className="m-auto mb-16" src={ourvision} alt="attention" />
     </div>
   );
 };
