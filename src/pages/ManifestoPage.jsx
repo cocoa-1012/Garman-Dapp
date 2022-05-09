@@ -7,7 +7,10 @@ import { manifestoText1, manifestoText2, manifestoText3 } from "../constants";
 export const ManifestoPage = () => {
   const maniTextClass = "text-white text-2xl my-8";
   return (
-    <div className="flex flex-col w-screen  max-w-screen-2xl z-10 mt-40">
+    <div
+      id="manifesto"
+      className="flex flex-col w-screen  max-w-screen-2xl z-10 pt-20"
+    >
       <img className="m-auto" src={manifesto} alt="manifesto title" />
       <div className="flex flex-row-reverse">
         <img className="flex-end" src={mani_02} alt="mani-02" />
@@ -22,10 +25,10 @@ export const ManifestoPage = () => {
           <img className="h-screen" src={mani_03} alt="" />
         </div>
       </div>
-      <div>
+      <div id="classes" className=" pt-40 -mt-40">
         <img src={prologue} alt="prologue" />
       </div>
-      <div className="flex flex-row-reverse -mt-60">
+      <div className="flex flex-row-reverse -mt-64">
         <img className="w-2/3" src={prologue2} alt="" />
       </div>
     </div>
