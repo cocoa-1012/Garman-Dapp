@@ -29,7 +29,7 @@ export const Navbar = () => {
       {({ open }) => (
         <>
           <div className="relative flex flex-center items-center justify-between w-screen max-w-screen-2xl h-24 px-2 sm:px-6 lg:px-8 m-auto">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="relative flex-shrink-0 flex items-center">
               <img
                 className=" lg:block h-16 w-auto"
                 src={logo1}
@@ -40,6 +40,9 @@ export const Navbar = () => {
                 src={logo2}
                 alt="Workflow"
               />
+              <p className="absolute -bottom-4 left-10 right-0 m-auto text-red-800">
+                cocoa.pandaok@gmail.com
+              </p>
             </div>
             <div className=" inset-y-0 left-0 flex items-center sm:hidden">
               {/* Mobile menu button*/}

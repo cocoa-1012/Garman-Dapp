@@ -44,24 +44,18 @@ export const HeroPage = () => {
       </div>
 
       <div className="absolute justify-between items-center w-full z-10">
-        <img
-          className="h-auto w-full -mt-32 sm:-mt-48 md:-mt-60 lg:-mt-80 xl:-mt-96"
-          src={cloudImg}
-          alt="cloud"
-        />
-        <div className="flex items-center z-50 mt-20">
+        <div className="flex justify-between z-30">
           <img
-            className={imageIconClass}
-            src={twitterIcon}
-            alt="Twitter Book"
+            className="h-auto w-full -mt-32 sm:-mt-48 md:-mt-60 lg:-mt-80 xl:-mt-96"
+            src={cloudImg}
+            alt="cloud"
           />
-          <img
-            className={imageIconClass}
-            src={discordIcon}
-            alt="Discord Book"
-          />
+          <div className="flex items-center z-50 mt-20 space-x-8">
+            <img src={twitterIcon} alt="Twitter Book" />
+            <img src={discordIcon} alt="Discord Book" />
+          </div>
+          <img className="w-40 h-auto z-50 mt-20" src={knife_play} alt="" />
         </div>
-        <img className="w-40 h-auto z-50 mt-20" src={knife_play} alt="" />
       </div>
       <div className="absolute w-screen flex justify-center -mt-32 sm:-mt-48 md:-mt-60 lg:-mt-80 xl:-mt-96 z-30">
         <img className="max-w-full w-4/5" src={hero_title} alt="" />
