@@ -15,6 +15,7 @@ import {
   meetToulText2,
   ourvisionText,
 } from "../constants";
+// import { KANE_ITEMS } from "../constants";
 export const ManifestoPage = () => {
   const maniTextClass = "text-white text-2xl my-8";
   return (
@@ -63,6 +64,9 @@ export const ManifestoPage = () => {
           <p className={`${maniTextClass} w-4/5 m-auto`}>{meetToulText1}</p>
           <p className={`${maniTextClass}  w-4/5 m-auto`}>{meetToulText2}</p>
         </div>
+      </div>
+      <div>
+        <img src="" alt="" />
       </div>
     </div>
   );

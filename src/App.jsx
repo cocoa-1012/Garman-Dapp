@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Cloud } from "./components/Cloud";
 import { Navbar } from "./components/Navbar";
 import { HeroPage } from "./pages/HeroPage";
 import { ManifestoPage } from "./pages/ManifestoPage";
@@ -10,7 +9,7 @@ function App() {
     <div className="bg-[#282828] flex flex-col items-center overflow-hidden">
       <Navbar />
       <HeroPage />
-      <Cloud />
+      {/* <Cloud /> */}
       <ManifestoPage />
     </div>
   );
