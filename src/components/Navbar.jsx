@@ -22,7 +22,10 @@ function classNames(...classes) {
 
 export const Navbar = () => {
   return (
-    <Disclosure as="nav" className="fixed bg-gray-900/30 h-24 w-screen z-50">
+    <Disclosure
+      as="nav"
+      className="fixed bg-gray-900/70 sm:bg-gray-900/30 h-24 w-screen z-50"
+    >
       {({ open }) => (
         <>
           <div className="relative flex flex-center items-center justify-between w-screen max-w-screen-2xl h-24 px-2 sm:px-6 lg:px-8 m-auto">
@@ -81,7 +84,7 @@ export const Navbar = () => {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center bg-gray-600/[.06] shadow">
+            <div className="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center bg-gray-900/70 shadow">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

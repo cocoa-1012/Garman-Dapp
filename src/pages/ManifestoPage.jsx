@@ -2,6 +2,7 @@ import attention from "../assets/images/attention.png";
 import mani_02 from "../assets/images/mani-02.png";
 import mani_03 from "../assets/images/mani-03.png";
 import manifesto from "../assets/images/manifesto.png";
+import meet_toul from "../assets/images/meet-toul.png";
 import ourvision from "../assets/images/our vision.png";
 import prologue from "../assets/images/prologue.png";
 import prologue2 from "../assets/images/prologue_2.png";
@@ -10,6 +11,9 @@ import {
   manifestoText1,
   manifestoText2,
   manifestoText3,
+  meetToulText1,
+  meetToulText2,
+  ourvisionText,
 } from "../constants";
 export const ManifestoPage = () => {
   const maniTextClass = "text-white text-2xl my-8";
@@ -50,6 +54,16 @@ export const ManifestoPage = () => {
         </p>
       </div>
       <img className="m-auto mb-16" src={ourvision} alt="attention" />
+      <p className={`${maniTextClass} text-center w-2/3 m-auto`}>
+        {ourvisionText}
+      </p>
+      <div className="flex">
+        <img className="w-3/6" src={meet_toul} alt="" />
+        <div>
+          <p className={`${maniTextClass} w-4/5 m-auto`}>{meetToulText1}</p>
+          <p className={`${maniTextClass}  w-4/5 m-auto`}>{meetToulText2}</p>
+        </div>
+      </div>
     </div>
   );
 };
