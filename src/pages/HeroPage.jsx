@@ -6,6 +6,7 @@ import knife_play from "../assets/images/btn-knife-play.svg";
 import cloudImg from "../assets/images/clouds.png";
 import day_icon from "../assets/images/day-icon.png";
 import discordIcon from "../assets/images/discord_icon.png";
+import hero_title from "../assets/images/hero_title.png";
 import night_icon from "../assets/images/night-icon.png";
 import twitterIcon from "../assets/images/twitter_icon.png";
 
@@ -16,9 +17,9 @@ export const HeroPage = () => {
     <div className="relative">
       <div className=" max-h-screen w-screen h-auto overflow-hidden">
         <img
-          className="relative max-h-screen w-screen h-auto mt-24 sm:mt-0 overflow-hidden"
+          className="max-h-screen w-screen h-auto mt-24 sm:mt-0 overflow-hidden"
           src={isDay ? hero_banner1 : hero_banner2}
-          alt=""
+          alt="Banner"
         />
         {/* <p>Hero Page</p> */}
         <img
@@ -41,6 +42,7 @@ export const HeroPage = () => {
           onClick={() => setIsDay(true)}
         />
       </div>
+
       <div className="absolute justify-between items-center w-full z-10">
         <img
           className="h-auto w-full -mt-32 sm:-mt-48 md:-mt-60 lg:-mt-80 xl:-mt-96"
@@ -60,6 +62,9 @@ export const HeroPage = () => {
           />
         </div>
         <img className="w-40 h-auto z-50 mt-20" src={knife_play} alt="" />
+      </div>
+      <div className="absolute w-screen flex justify-center -mt-32 sm:-mt-48 md:-mt-60 lg:-mt-80 xl:-mt-96 z-30">
+        <img className="max-w-full w-4/5" src={hero_title} alt="" />
       </div>
     </div>
   );
